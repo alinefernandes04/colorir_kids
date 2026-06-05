@@ -5,9 +5,12 @@ import DrawingPicker from './components/DrawingPicker'
 import sol from './drawings/sol'
 import estrelas from './drawings/estrelas'
 import coracoes from './drawings/coracoes'
+import flores   from './drawings/flores'
+import baloes   from './drawings/baloes'
+import caminhao from './drawings/caminhao'
 import styles from './App.module.css'
 
-const DRAWINGS = [sol, estrelas, coracoes]
+const DRAWINGS = [sol, estrelas, coracoes, flores, baloes, caminhao]
 
 export default function App() {
   const [selectedColor, setSelectedColor] = useState(COLORS[0].hex)

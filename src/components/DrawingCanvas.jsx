@@ -70,7 +70,6 @@ export default function DrawingCanvas({ drawing, selectedColor }) {
   }, [drawing.id])
 
   const handleRegionClick = (id) => {
-    if (completed) return
 
     const newFills = { ...fills, [id]: selectedColor }
     setFills(newFills)
