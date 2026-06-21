@@ -19,6 +19,8 @@ function Thumbnail({ drawing }) {
         }
         if (region.type === 'polygon') return <polygon {...props} points={region.points} />
         if (region.type === 'circle')  return <circle  {...props} cx={region.cx} cy={region.cy} r={region.r} />
+        if (region.type === 'ellipse') return <ellipse {...props} cx={region.cx} cy={region.cy} rx={region.rx} ry={region.ry} />
+        if (region.type === 'rect')    return <rect    {...props} x={region.x} y={region.y} width={region.width} height={region.height} />
         if (region.type === 'path')    return <path    {...props} d={region.d} />
         return null
       })}

@@ -49,6 +49,9 @@ function renderRegion(region, fill, onClick) {
   if (region.type === 'circle') {
     return <circle {...sharedProps} cx={region.cx} cy={region.cy} r={region.r} />
   }
+  if (region.type === 'ellipse') {
+    return <ellipse {...sharedProps} cx={region.cx} cy={region.cy} rx={region.rx} ry={region.ry} />
+  }
   if (region.type === 'path') {
     return <path {...sharedProps} d={region.d} />
   }
