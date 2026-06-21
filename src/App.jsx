@@ -8,9 +8,10 @@ import coracoes from './drawings/coracoes'
 import flores   from './drawings/flores'
 import baloes   from './drawings/baloes'
 import caminhao from './drawings/caminhao'
+import gato from './drawings/gato'
 import styles from './App.module.css'
 
-const DRAWINGS = [sol, estrelas, coracoes, flores, baloes, caminhao]
+const DRAWINGS = [sol, estrelas, coracoes, flores, baloes, caminhao, gato]
 
 export default function App() {
   const [selectedColor, setSelectedColor] = useState(COLORS[0].hex)
