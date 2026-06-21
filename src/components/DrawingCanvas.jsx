@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useSound } from '../hooks/useSound'
+import { APP_VERSION } from '../version'
 import styles from './DrawingCanvas.module.css'
 
 const DEFAULT_FILL = '#ffffff'
@@ -12,6 +13,30 @@ function renderDecoration(dec, i) {
         cx={dec.cx} cy={dec.cy}
         rx={dec.rx} ry={dec.ry}
         fill={dec.fill}
+        pointerEvents="none"
+      />
+    )
+  }
+  if (dec.type === 'circle') {
+    return (
+      <circle
+        key={i}
+        cx={dec.cx} cy={dec.cy}
+        r={dec.r}
+        fill={dec.fill}
+        pointerEvents="none"
+      />
+    )
+  }
+  if (dec.type === 'line') {
+    return (
+      <line
+        key={i}
+        x1={dec.x1} y1={dec.y1}
+        x2={dec.x2} y2={dec.y2}
+        stroke={dec.stroke}
+        strokeWidth={dec.strokeWidth}
+        strokeLinecap={dec.strokeLinecap}
         pointerEvents="none"
       />
     )
@@ -111,6 +136,15 @@ export default function DrawingCanvas({ drawing, selectedColor }) {
       <button className={styles.resetBtn} onClick={handleReset}>
         🔄 Recomeçar
       </button>
+
+      <span style={{
+        fontSize: '11px',
+        color: '#999',
+        marginTop: '4px',
+        fontFamily: 'monospace',
+      }}>
+        v{APP_VERSION}
+      </span>
     </div>
   )
 }

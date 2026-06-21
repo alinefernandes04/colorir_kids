@@ -26,6 +26,8 @@ const gato = {
     { type: 'line', x1: 210, y1: 195, x2: 270, y2: 185, stroke: '#000000', strokeWidth: 2, strokeLinecap: 'round' },
     { type: 'line', x1: 210, y1: 200, x2: 270, y2: 200, stroke: '#000000', strokeWidth: 2, strokeLinecap: 'round' },
     { type: 'line', x1: 210, y1: 205, x2: 270, y2: 215, stroke: '#000000', strokeWidth: 2, strokeLinecap: 'round' },
+    // Boca
+    { type: 'path', d: 'M 200 195 Q 200 205 185 205 M 200 195 Q 200 205 215 205', fill: 'none', stroke: '#000000', strokeWidth: 3, strokeLinecap: 'round' },
   ],
 
   // Regiões coloríveis — ordem importa: pintadas de baixo pra cima no SVG
