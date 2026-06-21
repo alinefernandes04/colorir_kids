@@ -37,6 +37,8 @@ const flores = {
     { id: 'f2p4', type: 'path', d: petalPath(65, 65, 180, 14, 34) },
     { id: 'f2p5', type: 'path', d: petalPath(65, 65,  45, 14, 34) },
     { id: 'f2p6', type: 'path', d: petalPath(65, 65, 135, 14, 34) },
+    { id: 'f2p7', type: 'path', d: petalPath(65, 65, 225, 14, 34) },
+    { id: 'f2p8', type: 'path', d: petalPath(65, 65, 315, 14, 34) },
     { id: 'f2c',  type: 'circle', cx: 65, cy: 65, r: 16 },
 
     // Flor 3 — pequena, canto sup dir
@@ -46,6 +48,8 @@ const flores = {
     { id: 'f3p4', type: 'path', d: petalPath(238, 72, 180, 14, 34) },
     { id: 'f3p5', type: 'path', d: petalPath(238, 72,  45, 14, 34) },
     { id: 'f3p6', type: 'path', d: petalPath(238, 72, 135, 14, 34) },
+    { id: 'f3p7', type: 'path', d: petalPath(238, 72, 225, 14, 34) },
+    { id: 'f3p8', type: 'path', d: petalPath(238, 72, 315, 14, 34) },
     { id: 'f3c',  type: 'circle', cx: 238, cy: 72, r: 16 },
 
     // Flor 4 — pequena, canto inf esq
@@ -55,6 +59,8 @@ const flores = {
     { id: 'f4p4', type: 'path', d: petalPath(68, 238, 180, 14, 34) },
     { id: 'f4p5', type: 'path', d: petalPath(68, 238,  45, 14, 34) },
     { id: 'f4p6', type: 'path', d: petalPath(68, 238, 135, 14, 34) },
+    { id: 'f4p7', type: 'path', d: petalPath(68, 238, 225, 14, 34) },
+    { id: 'f4p8', type: 'path', d: petalPath(68, 238, 315, 14, 34) },
     { id: 'f4c',  type: 'circle', cx: 68, cy: 238, r: 16 },
 
     // Flor 5 — pequena, canto inf dir
@@ -64,6 +70,8 @@ const flores = {
     { id: 'f5p4', type: 'path', d: petalPath(235, 235, 180, 14, 34) },
     { id: 'f5p5', type: 'path', d: petalPath(235, 235,  45, 14, 34) },
     { id: 'f5p6', type: 'path', d: petalPath(235, 235, 135, 14, 34) },
+    { id: 'f5p7', type: 'path', d: petalPath(235, 235, 225, 14, 34) },
+    { id: 'f5p8', type: 'path', d: petalPath(235, 235, 315, 14, 34) },
     { id: 'f5c',  type: 'circle', cx: 235, cy: 235, r: 16 },
   ],
 }
